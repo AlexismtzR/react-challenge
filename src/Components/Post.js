@@ -6,11 +6,29 @@ import Comment from './Comment'
 
 import "./style.css"
 
+
+    /**
+    * Renders a <Post /> component
+    * @param  props
+    * @param  props.title - The title of the post
+    * @param  props.body - The content of the post
+    * @param  props.comment - An array of objects containing the comments of the post
+    * @param  props.postId - The id of the post
+    */
+
 const Post = ({title, body, comment, postId}) => {
 
     const [com, setCom] = useState(false)
     const [leavecomment, setleave] = useState("")
     const dispatch = useDispatch();
+
+     /**
+     * @param  {postId} "postId"
+     * @param  {rand} "id"
+     * @param  {"CarlosAlexisMartinezRangel"} "name"
+     * @param  {"Alexis@alexis.com"} "email"
+     * @param  {leavecomment}} "body"
+     */
 
     const aComment = () => {
         const min = 1;
